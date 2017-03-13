@@ -7,7 +7,7 @@ import domain.Trabajo;
 public class Name implements Serializable {
     private static final long serialVersionUID = 5658716793957904104L;
     private String name;
-    private Trabajo trabajo;
+    private String trabajo;
     
     public Name() {
     }
@@ -18,10 +18,10 @@ public class Name implements Serializable {
         this.name = name;
     }
 
-    public Trabajo getTrabajo() {
+    public String getTrabajo() {
         return this.trabajo;
     }
-    public void setTrabajo(Trabajo trabajo) {
+    public void setTrabajo(String trabajo) {
         this.trabajo = trabajo;
     }
 }
