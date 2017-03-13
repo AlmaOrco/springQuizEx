@@ -33,7 +33,7 @@ public class PreguntaController {
     @RequestMapping(value = "/processForm")
     public String processForm(@ModelAttribute("name") Name name, Model model){
         pregService.setName(name.getName());
-        String idTrabajo = model.getModelAttribute("trabajo");
+        String idTrabajo = name.getTrabajo();
         pregService.cargarPreguntas(idTrabajo);
         sig.incrNum();
         Pregunta p = pregService.getPregunta(sig.getNum());
