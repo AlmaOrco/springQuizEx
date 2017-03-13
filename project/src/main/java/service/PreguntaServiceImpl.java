@@ -74,7 +74,7 @@ public class PreguntaServiceImpl {
 
     public Pregunta getPregunta(int id) {
         if(id <= preguntas.size()) {
-          return preguntas.get(0);
+          return preguntas.get(id-1);
         }
         return null;
     }
